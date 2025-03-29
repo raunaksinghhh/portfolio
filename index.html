@@ -3,183 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raunak Singh | Web Developer</title>
-    <meta name="description" content="Portfolio website of Raunak Singh, a web developer specializing in modern web technologies.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    
-    <!-- Google Fonts -->
+    <title>Modern Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header & Navigation -->
+    <div class="cursor"></div>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
     <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">Raunak Singh</a>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
-        </div>
+        <nav class="glass-nav">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
-
-
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-        <div class="container">
+    <main>
+        <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Hi, I'm Raunak Singh</h1>
-                <p>A passionate web developer specializing in creating beautiful, functional, and user-centered digital experiences. Currently, I'm focused on building accessible, human-centered products at <a href="#">Acme Inc</a>.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn">Get in Touch</a>
-                    <a href="#projects" class="btn btn-outline">View Projects</a>
+                <h1 class="animate-text">Hi, I'm <span class="highlight">Your Name</span></h1>
+                <h2 class="animate-text delay-1">Frontend Developer</h2>
+                <p class="animate-text delay-2">Creating beautiful, responsive websites with modern technologies</p>
+                <div class="cta-buttons animate-text delay-3">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="images/hero-image.svg" alt="Developer illustration">
+            <div class="hero-image animate-image">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Profile Image">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Tech Stack Section -->
-    <section class="tech-stack">
-        <div class="container">
-            <h2>My Tech Stack</h2>
+        <section id="about" class="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate frontend developer with a keen eye for design and a love for creating intuitive, dynamic user experiences. With a background in design and development, I bring a unique perspective to every project.</p>
+                    <p>My journey in web development started 5 years ago, and I've been continuously learning and adapting to new technologies ever since. I believe in clean code, responsive design, and creating websites that not only look great but also perform exceptionally well.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>30+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <p>A fully responsive e-commerce platform with cart functionality and payment integration.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small">View Live</a>
+                            <a href="#" class="btn small secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard UI</h3>
+                        <p>An interactive dashboard with data visualization and real-time updates.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>D3.js</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small">View Live</a>
+                            <a href="#" class="btn small secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Mobile App</h3>
+                        <p>A cross-platform mobile application for task management and productivity.</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Redux</span>
+                            <span>Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small">View Live</a>
+                            <a href="#" class="btn small secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="section-title">My Skills</h2>
             <div class="tech-grid">
                 <div class="tech-item">
-                    <img src="images/tech/html5.svg" alt="HTML5">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
                     <h3>HTML5</h3>
                 </div>
                 <div class="tech-item">
-                    <img src="images/tech/css3.svg" alt="CSS3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
                     <h3>CSS3</h3>
                 </div>
                 <div class="tech-item">
-                    <img src="images/tech/javascript.svg" alt="JavaScript">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
                     <h3>JavaScript</h3>
                 </div>
                 <div class="tech-item">
-                    <img src="images/tech/react.svg" alt="React">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
                     <h3>React</h3>
                 </div>
                 <div class="tech-item">
-                    <img src="images/tech/node.svg" alt="Node.js">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
                     <h3>Node.js</h3>
                 </div>
                 <div class="tech-item">
-                    <img src="images/tech/tailwind.svg" alt="Tailwind CSS">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind CSS">
                     <h3>Tailwind CSS</h3>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/projects/project1.jpg" alt="Project 1">
-                    </div>
-                    <div class="project-content">
-                        <h3>E-commerce Platform</h3>
-                        <p>A full-featured online store with product catalog, shopping cart, and secure checkout.</p>
-                        <div class="project-tech">
-                            <img src="images/tech/react.svg" alt="React">
-                            <img src="images/tech/node.svg" alt="Node.js">
-                            <img src="images/tech/mongodb.svg" alt="MongoDB">
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline">View Demo</a>
-                            <a href="#" class="btn btn-outline">Source Code</a>
-                        </div>
-                    </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                    <h3>MongoDB</h3>
                 </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/projects/project2.jpg" alt="Project 2">
-                    </div>
-                    <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>A productivity application for organizing tasks, projects, and deadlines.</p>
-                        <div class="project-tech">
-                            <img src="images/tech/vue.svg" alt="Vue.js">
-                            <img src="images/tech/firebase.svg" alt="Firebase">
-                            <img src="images/tech/tailwind.svg" alt="Tailwind CSS">
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline">View Demo</a>
-                            <a href="#" class="btn btn-outline">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/projects/project3.jpg" alt="Project 3">
-                    </div>
-                    <div class="project-content">
-                        <h3>Weather Dashboard</h3>
-                        <p>Real-time weather information with forecast data and interactive maps.</p>
-                        <div class="project-tech">
-                            <img src="images/tech/javascript.svg" alt="JavaScript">
-                            <img src="images/tech/css3.svg" alt="CSS3">
-                            <img src="images/tech/api.svg" alt="REST API">
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline">View Demo</a>
-                            <a href="#" class="btn btn-outline">Source Code</a>
-                        </div>
-                    </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js">
+                    <h3>Vue.js</h3>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section id="contact" class="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>youremail@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (123) 456-7890</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>New York, NY</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form glass-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-
-    <!-- Experience Section -->
-
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="copyright">
-                    <p>&copy; 2023 Raunak Singh. All rights reserved.</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/raunaksinghhh"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/raunaksingh1/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://x.com/RaunakSing1129"><i class="fab fa-twitter"></i></a>
-
-                </div>
-            </div>
+        <div class="footer-content">
+            <p>&copy; 2023 Your Name. All Rights Reserved.</p>
+            <p>Designed with ❤️ and Modern CSS</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
