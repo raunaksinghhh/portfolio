@@ -127,8 +127,8 @@ header {
 }
 
 .glass-nav {
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   background: var(--glass-background);
   border: 1px solid var(--glass-border);
   box-shadow: var(--box-shadow);
@@ -404,8 +404,8 @@ section {
   padding: 1.5rem;
   border-radius: var(--border-radius);
   background: var(--glass-background);
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   box-shadow: var(--box-shadow);
   transition: var(--transition);
@@ -513,8 +513,8 @@ section {
   padding: 1.5rem;
   border-radius: var(--border-radius);
   background: var(--glass-background);
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   box-shadow: var(--box-shadow);
   transition: var(--transition);
@@ -595,8 +595,8 @@ section {
   height: 40px;
   border-radius: 50%;
   background-color: var(--glass-background);
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   color: var(--primary-color);
   transition: var(--transition);
@@ -616,8 +616,8 @@ section {
 
 .glass-form {
   background: var(--glass-background);
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   box-shadow: var(--box-shadow);
 }
