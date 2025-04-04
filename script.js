@@ -34,10 +34,33 @@ const firebaseConfig = {
       // Mobile menu toggle
       const hamburger = document.querySelector('.hamburger');
       const navLinks = document.querySelector('.nav-links');
+      const navLinksItems = document.querySelectorAll('.nav-links li a');
       
-      hamburger.addEventListener('click', function() {
-          navLinks.classList.toggle('active');
-          hamburger.classList.toggle('active');
+      // Toggle menu when hamburger is clicked
+      if (hamburger) {
+          hamburger.addEventListener('click', function() {
+              this.classList.toggle('active');
+              navLinks.classList.toggle('active');
+              document.body.classList.toggle('menu-open');
+          });
+      }
+      
+      // Close menu when nav item is clicked
+      navLinksItems.forEach(item => {
+          item.addEventListener('click', function() {
+              hamburger.classList.remove('active');
+              navLinks.classList.remove('active');
+              document.body.classList.remove('menu-open');
+          });
+      });
+      
+      // Handle resize to reset menu state
+      window.addEventListener('resize', function() {
+          if (window.innerWidth >= 1024) {
+              hamburger.classList.remove('active');
+              navLinks.classList.remove('active');
+              document.body.classList.remove('menu-open');
+          }
       });
       
       // Smooth scrolling for navigation links
@@ -52,12 +75,6 @@ const firebaseConfig = {
                   top: targetElement.offsetTop - 100,
                   behavior: 'smooth'
               });
-              
-              // Close mobile menu if open
-              if (navLinks.classList.contains('active')) {
-                  navLinks.classList.remove('active');
-                  hamburger.classList.remove('active');
-              }
           });
       });
       
